@@ -1,0 +1,47 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>This is a dummy title for the dummy page</title>
+    <script src="yals.js"></script>
+
+    <script>
+
+        LanguageSelector.texts = {
+            "english": {
+                "main-paragraph": "Site under maintenance. We're working for you...",
+                "secondary-paragraph": "Sorry, you've caught us out. We're in the middle of doing some tech updates but will be back to normal soon.",
+                "label": "English"
+            },
+            "italian": {
+                "main-paragraph": "Sito in manutenzione. Stiamo lavorando per te...",
+                "secondary-paragraph": "Servizio momentaneamente non disponibile. Sono in corso aggiornamenti tecnici. Il servizio tornerà disponibile a breve.",
+                "label": "Italiano"
+            },
+            "german": {
+                "main-paragraph": "Die Website wird derzeit gewartet. Wir arbeiten für Sie...",
+                "secondary-paragraph": " Es tut uns leid – Sie haben uns erwischt. Wir führen gerade einige technische Updates durch und sind in Kürze wieder für Sie da.",
+                "label": "Deutsch"
+            },
+            "french": {
+                "main-paragraph": "Maintenance en cours. Nous améliorons votre site...",
+                "secondary-paragraph": "Désolé, nous ne sommes pas disponibles. Nous effectuons des mises à jour techniques et serons de retour très bientôt.",
+                "label": "Français"
+            }
+        };
+        window.onload = LanguageSelector.initialize;
+    </script>
+</head>
+<body>
+<div id="container-lang-choicher">
+
+</div>
+
+
+<h1>Dummy Title</h1>
+
+<p id="main-paragraph"></p>
+
+<p id="secondary-paragraph"></p>
+
+</body>
+</html>
