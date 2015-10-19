@@ -37,10 +37,21 @@ var LanguageSelector = {
         container.innerHTML = outputHtml;
 
     },
+    "addEvent": function(){
+        var elem = document.body,
+            type = 'change',
+            callback = LanguageSelector.selectLanguage;
+
+        if (elem.addEventListener) {
+            elem.addEventListener(type, callback, false);
+        }
+        else if (elem.attachEvent) {
+            elem.attachEvent("on" + type, callback);
+        }
+    },
     "initialize": function () {
         LanguageSelector.printSelectName(true);
         LanguageSelector.setTexts(LanguageSelector.defaultLanguage);
-        window.addEvent(document.body,"change",LanguageSelector.selectLanguage);
+        LanguageSelector.addEvent();
     }
 };
-
