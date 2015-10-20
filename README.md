@@ -1,1 +1,4 @@
 # Yals
+
+##Description
+This Javascript library allow to manage the texts translations. The class receives in input a Json with the translation for each block of text in each language. When the method initialize is call the library print the select name and internationalize the texts with the default language.
